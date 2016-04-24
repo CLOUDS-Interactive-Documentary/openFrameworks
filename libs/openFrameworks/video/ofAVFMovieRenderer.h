@@ -26,6 +26,7 @@
 	CVOpenGLTextureRef _latestTextureFrame;
 	CVPixelBufferRef _latestPixelFrame;
 
+    
 	BOOL _useTexture;
     BOOL _useAlpha;
     
@@ -42,6 +43,8 @@
     
     BOOL _bLoading;
     BOOL _bLoaded;
+    BOOL _bWaitingForReady;
+    
     BOOL _bAudioLoaded;
     BOOL _bPaused;
     BOOL _bMovieDone;
@@ -87,6 +90,8 @@
 
 @property (nonatomic, retain, readonly) NSMutableData* amplitudes;
 @property (nonatomic, assign, readonly) int numAmplitudes;
+
+@property (nonatomic, retain) NSString* loadedURL;
 
 - (void)loadFilePath:(NSString *)filePath;
 - (void)loadURLPath:(NSString *)urlPath;
