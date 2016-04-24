@@ -961,6 +961,7 @@
 					"$(LIB_FMODEX)",
 				);
 				PRODUCT_NAME = openFrameworksDebug;
+				SDKROOT = macosx10.11;
 			};
 			name = Debug;
 		};
@@ -1005,6 +1006,7 @@
 					"$(LIB_FMODEX)",
 				);
 				PRODUCT_NAME = openFrameworks;
+				SDKROOT = macosx10.11;
 			};
 			name = Release;
 		};
