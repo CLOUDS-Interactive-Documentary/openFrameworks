@@ -31,6 +31,9 @@
 #include <assert.h>
 
 #pragma comment(lib, "mfreadwrite.lib")
+#pragma comment(lib, "mf.lib")
+#pragma comment(lib, "mfplat.lib")
+#pragma comment(lib, "mfuuid.lib")
 
 #include "audiodecodermediafoundation.h"
 
